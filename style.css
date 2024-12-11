@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(223, 243, 228);
+
+}
+h1{
+    text-decoration: underline;
+}
+#main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container{
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    /* border: none; */
+    border: 3px solid rgb(229, 79, 109);
+    border-radius: 10px;
+    background-color: rgb(113, 128, 185);
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.msg-container{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hide{
+    display: none;
+}
+
+#menu{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#reset{
+    margin-top: 30px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(52, 35, 166);
+    border: none;
+}
+
+#new-game{
+    margin-top: 30px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(52, 35, 166);
+    border: none;
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    #main{
+        height: 60vh;
+    }
+    #container{
+        height: 330px;
+        width: 330px;
+        gap: 15px;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+    #menu{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
